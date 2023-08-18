@@ -17,5 +17,4 @@ ENV PYTHONPATH ${PYTHONPATH}:~/.local/lib/python3.9/site-packages
 
 RUN git clone https://github.com/MEALORII/TP_MEALOR.git
 RUN cd TP_MEALOR
-RUN pip install mealor/ --user
 ENTRYPOINT []
