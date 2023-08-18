@@ -9,4 +9,9 @@ WORKDIR ${HOME}
 COPY --chown=${NB_UID} . ${HOME}
 
 USER ${NB_USER}
+
+
+ENV PATH $PATH:~/.local/bin
+ENV LD_LIBRARY_PATH ${LD_LIBRARY_PATH}:~/.local/lib
+ENV PYTHONPATH ${PYTHONPATH}:~/.local/lib/python3.9/site-packages
 ENTRYPOINT []
